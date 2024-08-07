@@ -34,12 +34,13 @@ class Login extends Component {
     event.preventDefault();
     const { username, email, password, mobile } = this.state;
     const userDetails = { username, email, password, mobile };
-    const url = "http://localhost:4002/register";
+    const url = "https://claw-backend-shoeb.onrender.com/register";
     const options = {
       method: "POST",
       mode: "cors",
       headers: {
-        "Access-Control-Allow-Origin": "http://localhost:4002",
+        "Access-Control-Allow-Origin":
+          "https://claw-backend-shoeb.onrender.com/",
         "Access-Control-Allow-Credentials": true,
         "Content-Type": "application/json",
         Accept: "application/json",
